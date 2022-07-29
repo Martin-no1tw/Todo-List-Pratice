@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import cx from 'classnames';
 import RenderTip from '../RenderTip';
 import './TodoFilter.scss';
@@ -35,4 +35,4 @@ const TodoFilter: React.FC<TodoFilterProps> = (props) => {
     </section>
   );
 };
-export default TodoFilter;
+export default memo(TodoFilter);

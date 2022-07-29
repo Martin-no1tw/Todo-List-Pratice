@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import RenderTip from '../RenderTip';
 import './TodoForm.scss';
 
@@ -35,4 +35,4 @@ const TodoForm: React.FC<TodoFormProps> = (props) => {
   );
 };
 
-export default TodoForm;
+export default memo(TodoForm);

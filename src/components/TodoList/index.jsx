@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo, memo } from 'react';
 import RenderTip from '../RenderTip';
 import TodoForm from '../TodoForm';
 import TodoItem from '../TodoItem';
@@ -76,4 +76,4 @@ const TodoList = () => {
   );
 };
 
-export default TodoList;
+export default memo(TodoList);

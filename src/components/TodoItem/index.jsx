@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React from 'react';
+import React, { memo } from 'react';
 import cx from 'classnames';
 import RenderTip from '../RenderTip';
 // TODO
@@ -31,4 +31,4 @@ const TodoItem: React.FC<TodoItemProps> = (props) => {
   );
 };
 
-export default TodoItem;
+export default memo(TodoItem);
