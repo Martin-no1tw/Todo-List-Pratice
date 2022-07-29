@@ -1,4 +1,4 @@
-import { useRef, useEffect, useCallback } from 'react';
+import { useRef, useEffect, useCallback, memo } from 'react';
 import style from './RenderTip.module.scss';
 
 const RenderTip = () => {
@@ -21,4 +21,4 @@ const RenderTip = () => {
     </strong>
   );
 };
-export default RenderTip;
+export default memo(RenderTip);
